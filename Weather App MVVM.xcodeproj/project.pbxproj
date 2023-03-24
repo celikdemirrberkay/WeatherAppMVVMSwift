@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F040A1BE29CD9118000F11FF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F040A1BD29CD9118000F11FF /* Endpoint.swift */; };
+		F040A1C129CD91C9000F11FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F040A1C029CD91C9000F11FF /* Constants.swift */; };
+		F085CD8E29CD9B1F008F42B5 /* WeatherViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085CD8D29CD9B1F008F42B5 /* WeatherViewModelOutput.swift */; };
 		F0BBA00529CCC228009074B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA00429CCC228009074B1 /* AppDelegate.swift */; };
 		F0BBA00729CCC228009074B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA00629CCC228009074B1 /* SceneDelegate.swift */; };
 		F0BBA00929CCC228009074B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA00829CCC228009074B1 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 		F0BBA01C29CCC229009074B1 /* Weather_App_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA01B29CCC229009074B1 /* Weather_App_MVVMTests.swift */; };
 		F0BBA02629CCC229009074B1 /* Weather_App_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA02529CCC229009074B1 /* Weather_App_MVVMUITests.swift */; };
 		F0BBA02829CCC229009074B1 /* Weather_App_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA02729CCC229009074B1 /* Weather_App_MVVMUITestsLaunchTests.swift */; };
+		F0BBA03A29CCC35B009074B1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA03929CCC35B009074B1 /* Weather.swift */; };
+		F0BBA03C29CCC553009074B1 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA03B29CCC553009074B1 /* WebServices.swift */; };
+		F0BBA03E29CCD072009074B1 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBA03D29CCD072009074B1 /* WeatherViewModel.swift */; };
+		F0BBA04129CCD20C009074B1 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F0BBA04029CCD20C009074B1 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F040A1BD29CD9118000F11FF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F040A1C029CD91C9000F11FF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F085CD8D29CD9B1F008F42B5 /* WeatherViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelOutput.swift; sourceTree = "<group>"; };
 		F0BBA00129CCC228009074B1 /* Weather App MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BBA00429CCC228009074B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BBA00629CCC228009074B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 		F0BBA02129CCC229009074B1 /* Weather App MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather App MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BBA02529CCC229009074B1 /* Weather_App_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_App_MVVMUITests.swift; sourceTree = "<group>"; };
 		F0BBA02729CCC229009074B1 /* Weather_App_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_App_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0BBA03929CCC35B009074B1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		F0BBA03B29CCC553009074B1 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		F0BBA03D29CCD072009074B1 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BBA04129CCD20C009074B1 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F040A1BF29CD91B0000F11FF /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F040A1C029CD91C9000F11FF /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F085CD8C29CD9B00008F42B5 /* Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				F085CD8D29CD9B1F008F42B5 /* WeatherViewModelOutput.swift */,
+			);
+			path = Outputs;
+			sourceTree = "<group>";
+		};
 		F0BB9FF829CCC228009074B1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +129,12 @@
 		F0BBA00329CCC228009074B1 /* Weather App MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				F0BBA00429CCC228009074B1 /* AppDelegate.swift */,
-				F0BBA00629CCC228009074B1 /* SceneDelegate.swift */,
-				F0BBA00829CCC228009074B1 /* ViewController.swift */,
+				F040A1BF29CD91B0000F11FF /* Constant */,
+				F0BBA03829CCC270009074B1 /* Core */,
+				F0BBA03729CCC264009074B1 /* Model */,
+				F0BBA03629CCC25D009074B1 /* View */,
+				F0BBA03529CCC24A009074B1 /* View Model */,
+				F0BBA03429CCC241009074B1 /* Services */,
 				F0BBA00A29CCC228009074B1 /* Main.storyboard */,
 				F0BBA00D29CCC229009074B1 /* Assets.xcassets */,
 				F0BBA00F29CCC229009074B1 /* LaunchScreen.storyboard */,
@@ -127,6 +160,49 @@
 			path = "Weather App MVVMUITests";
 			sourceTree = "<group>";
 		};
+		F0BBA03429CCC241009074B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0BBA03B29CCC553009074B1 /* WebServices.swift */,
+				F040A1BD29CD9118000F11FF /* Endpoint.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F0BBA03529CCC24A009074B1 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				F085CD8C29CD9B00008F42B5 /* Outputs */,
+				F0BBA03D29CCD072009074B1 /* WeatherViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		F0BBA03629CCC25D009074B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0BBA00829CCC228009074B1 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0BBA03729CCC264009074B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0BBA03929CCC35B009074B1 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0BBA03829CCC270009074B1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F0BBA00429CCC228009074B1 /* AppDelegate.swift */,
+				F0BBA00629CCC228009074B1 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +219,9 @@
 			dependencies = (
 			);
 			name = "Weather App MVVM";
+			packageProductDependencies = (
+				F0BBA04029CCD20C009074B1 /* AlamofireImage */,
+			);
 			productName = "Weather App MVVM";
 			productReference = F0BBA00129CCC228009074B1 /* Weather App MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +294,9 @@
 				Base,
 			);
 			mainGroup = F0BB9FF829CCC228009074B1;
+			packageReferences = (
+				F0BBA03F29CCD20C009074B1 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = F0BBA00229CCC228009074B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F040A1BE29CD9118000F11FF /* Endpoint.swift in Sources */,
+				F0BBA03A29CCC35B009074B1 /* Weather.swift in Sources */,
+				F085CD8E29CD9B1F008F42B5 /* WeatherViewModelOutput.swift in Sources */,
+				F0BBA03E29CCD072009074B1 /* WeatherViewModel.swift in Sources */,
+				F0BBA03C29CCC553009074B1 /* WebServices.swift in Sources */,
 				F0BBA00929CCC228009074B1 /* ViewController.swift in Sources */,
 				F0BBA00529CCC228009074B1 /* AppDelegate.swift in Sources */,
 				F0BBA00729CCC228009074B1 /* SceneDelegate.swift in Sources */,
+				F040A1C129CD91C9000F11FF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +690,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0BBA03F29CCD20C009074B1 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0BBA04029CCD20C009074B1 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0BBA03F29CCD20C009074B1 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0BB9FF929CCC228009074B1 /* Project object */;
 }
